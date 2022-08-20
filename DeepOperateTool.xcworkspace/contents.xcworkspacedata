@@ -2,12 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:DeepOperatePackage">
+   </FileRef>
+   <FileRef
       location = "group:MacOS/MacOS.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:iOS/iOS.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:DeepOperatePackage">
    </FileRef>
 </Workspace>
