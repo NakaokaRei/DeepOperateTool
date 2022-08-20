@@ -30,5 +30,12 @@ let package = Package(
         .target(
             name: "Managers",
             dependencies: []),
+        .testTarget(
+            name: "DeepOperatePackageTests",
+            dependencies: [
+                "AppFeature",
+                "Managers"
+            ]
+        )
     ]
 )

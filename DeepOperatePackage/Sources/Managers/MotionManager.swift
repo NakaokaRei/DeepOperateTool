@@ -13,11 +13,10 @@ public class MotionManager {
 //    let hmm = CMHeadphoneMotionManager()
 
     public init() {
-        startStream()
     }
 
-    public func startStream() {
-        print("start")
+    public func startStream() -> String {
+        return "hello"
 //        hmm.startDeviceMotionUpdates(to: .main) { (motion, error) in
 //            guard let motion = motion else { return }
 //            print(motion)
