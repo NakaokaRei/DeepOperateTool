@@ -16,7 +16,7 @@ struct MacOSApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MacContentView()
         }
     }
 }

@@ -12,7 +12,7 @@ import AppFeature
 struct iOSApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            iOSContentView()
         }
     }
 }

@@ -25,11 +25,24 @@ let package = Package(
         .target(
             name: "AppFeature",
             dependencies: [
-                "Managers"
-        ]),
+                "ViewModel"
+            ]
+        ),
         .target(
             name: "Managers",
-            dependencies: []),
+            dependencies: []
+        ),
+        .target(
+            name: "MultipeerClient",
+            dependencies: []
+        ),
+        .target(
+            name: "ViewModel",
+            dependencies: [
+                "Managers",
+                "MultipeerClient"
+            ]
+        ),
         .testTarget(
             name: "DeepOperatePackageTests",
             dependencies: [
