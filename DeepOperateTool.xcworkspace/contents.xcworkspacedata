@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
-   <FileRef
-      location = "group:DeepOperatePackage">
-   </FileRef>
+   <Group
+      location = "group:Packeges"
+      name = "Packages">
+      <FileRef
+         location = "group:/Users/nakaokarei/work/dev/DeepOperateTool/Packeges/MacPackage">
+      </FileRef>
+      <FileRef
+         location = "group:iOSPackage">
+      </FileRef>
+      <FileRef
+         location = "group:/Users/nakaokarei/work/dev/DeepOperateTool/Packeges/DeepOperatePackage">
+      </FileRef>
+   </Group>
    <FileRef
       location = "group:MacOS/MacOS.xcodeproj">
    </FileRef>
