@@ -2,16 +2,16 @@
 <Workspace
    version = "1.0">
    <Group
-      location = "group:Packeges"
+      location = "container:"
       name = "Packages">
       <FileRef
-         location = "group:/Users/nakaokarei/work/dev/DeepOperateTool/Packeges/MacPackage">
+         location = "group:Packeges/DeepOperatePackage">
       </FileRef>
       <FileRef
-         location = "group:iOSPackage">
+         location = "group:Packeges/iOSPackage">
       </FileRef>
       <FileRef
-         location = "group:/Users/nakaokarei/work/dev/DeepOperateTool/Packeges/DeepOperatePackage">
+         location = "group:Packeges/MacPackage">
       </FileRef>
    </Group>
    <FileRef
