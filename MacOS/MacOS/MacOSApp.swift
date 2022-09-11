@@ -7,7 +7,7 @@
 
 import Cocoa
 import SwiftUI
-import AppFeature
+import MacView
 
 @main
 struct MacOSApp: App {
@@ -16,7 +16,7 @@ struct MacOSApp: App {
     
     var body: some Scene {
         WindowGroup {
-            MacContentView()
+            ContentView()
         }
     }
 }

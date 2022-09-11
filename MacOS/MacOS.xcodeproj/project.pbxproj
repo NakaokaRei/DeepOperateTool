@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5C5C238328B08ABA00EB737F /* App in Frameworks */ = {isa = PBXBuildFile; productRef = 5C5C238228B08ABA00EB737F /* App */; };
+		5C48107C28CE2ACD00BC8963 /* MacPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 5C48107B28CE2ACD00BC8963 /* MacPackage */; };
 		5C5C238828B08B3E00EB737F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5C238728B08B3E00EB737F /* AppDelegate.swift */; };
 		5C99513A28B089720026C4BF /* MacOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C99513928B089720026C4BF /* MacOSApp.swift */; };
 		5C99513E28B089730026C4BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C99513D28B089730026C4BF /* Assets.xcassets */; };
@@ -29,7 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C5C238328B08ABA00EB737F /* App in Frameworks */,
+				5C48107C28CE2ACD00BC8963 /* MacPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +99,7 @@
 			);
 			name = MacOS;
 			packageProductDependencies = (
-				5C5C238228B08ABA00EB737F /* App */,
+				5C48107B28CE2ACD00BC8963 /* MacPackage */,
 			);
 			productName = MacOS;
 			productReference = 5C99513628B089720026C4BF /* MacOS.app */;
@@ -358,9 +358,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		5C5C238228B08ABA00EB737F /* App */ = {
+		5C48107B28CE2ACD00BC8963 /* MacPackage */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = App;
+			productName = MacPackage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

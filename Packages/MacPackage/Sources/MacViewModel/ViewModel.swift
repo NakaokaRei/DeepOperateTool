@@ -1,6 +1,6 @@
 //
-//  MacViewModel.swift
-//  
+//  ViewModel.swift
+//
 //
 //  Created by NakaokaRei on 2022/08/25.
 //
@@ -8,10 +8,10 @@
 import Foundation
 import SwiftUI
 import Combine
-import Managers
+import MacManagers
 import MultipeerClient
 
-public class MacViewModel: ObservableObject {
+public class ViewModel: ObservableObject {
 
     private let multipeerClient = MultipeerClient()
 

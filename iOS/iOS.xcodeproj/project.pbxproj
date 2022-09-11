@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5C5C238628B08AC500EB737F /* App in Frameworks */ = {isa = PBXBuildFile; productRef = 5C5C238528B08AC500EB737F /* App */; };
 		5C5C239028B0942900EB737F /* iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5C238F28B0942900EB737F /* iOSTests.swift */; };
 		5C99512028B089550026C4BF /* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C99511F28B089550026C4BF /* iOSApp.swift */; };
 		5C99512428B089560026C4BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C99512328B089560026C4BF /* Assets.xcassets */; };
 		5C99512728B089560026C4BF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C99512628B089560026C4BF /* Preview Assets.xcassets */; };
+		5CE58D3528CE21E1003E2BB5 /* iOSPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 5CE58D3428CE21E1003E2BB5 /* iOSPackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C5C238628B08AC500EB737F /* App in Frameworks */,
+				5CE58D3528CE21E1003E2BB5 /* iOSPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,7 +143,7 @@
 			);
 			name = iOS;
 			packageProductDependencies = (
-				5C5C238528B08AC500EB737F /* App */,
+				5CE58D3428CE21E1003E2BB5 /* iOSPackage */,
 			);
 			productName = iOS;
 			productReference = 5C99511C28B089550026C4BF /* iOS.app */;
@@ -487,9 +487,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		5C5C238528B08AC500EB737F /* App */ = {
+		5CE58D3428CE21E1003E2BB5 /* iOSPackage */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = App;
+			productName = iOSPackage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
