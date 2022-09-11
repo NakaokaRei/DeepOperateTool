@@ -10,7 +10,7 @@ import CoreMotion
 
 public class MotionManager {
 
-//    let hmm = CMHeadphoneMotionManager()
+    let hmm = CMHeadphoneMotionManager()
 
     public init() {
     }
