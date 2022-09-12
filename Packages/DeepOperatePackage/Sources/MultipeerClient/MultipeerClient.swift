@@ -23,6 +23,8 @@ public class MultipeerClient: NSObject {
         return session.connectedPeers
     }
 
+    public var delegate: MulitipeerProtocol?
+
     public override init() {
         super.init()
 
@@ -69,7 +71,7 @@ extension MultipeerClient: MCSessionDelegate {
         guard let message = String(data: data, encoding: .utf8) else {
             return
         }
-        print(message)
+        delegate?.recievedMessage(message: message)
     }
 
     public func session(_ session: MCSession, didReceive stream: InputStream, withName streamName: String, fromPeer peerID: MCPeerID) {
