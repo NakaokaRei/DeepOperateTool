@@ -7,7 +7,6 @@
 
 import Cocoa
 import SwiftUI
-import MacView
 
 @main
 struct MacOSApp: App {

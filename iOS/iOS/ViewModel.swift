@@ -8,7 +8,6 @@
 import Foundation
 import SwiftUI
 import Combine
-import iOSManagers
 import MultipeerClient
 
 public class ViewModel: ObservableObject {

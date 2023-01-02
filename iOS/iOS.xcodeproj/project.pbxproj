@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		230C8655296332B300A3D376 /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230C8654296332B300A3D376 /* MotionManager.swift */; };
+		230C8657296332BB00A3D376 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230C8656296332BB00A3D376 /* ContentView.swift */; };
+		230C8659296332BE00A3D376 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230C8658296332BE00A3D376 /* ViewModel.swift */; };
+		230C86632963332E00A3D376 /* MultipeerClient in Frameworks */ = {isa = PBXBuildFile; productRef = 230C86622963332E00A3D376 /* MultipeerClient */; };
 		5C5C239028B0942900EB737F /* iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5C238F28B0942900EB737F /* iOSTests.swift */; };
 		5C99512028B089550026C4BF /* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C99511F28B089550026C4BF /* iOSApp.swift */; };
 		5C99512428B089560026C4BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C99512328B089560026C4BF /* Assets.xcassets */; };
 		5C99512728B089560026C4BF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C99512628B089560026C4BF /* Preview Assets.xcassets */; };
-		5CE58D3528CE21E1003E2BB5 /* iOSPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 5CE58D3428CE21E1003E2BB5 /* iOSPackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		230C8654296332B300A3D376 /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
+		230C8656296332BB00A3D376 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		230C8658296332BE00A3D376 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		5C5AE9DF28B3DA2800912893 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5C5AE9E028B3DBA900912893 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5C5C238D28B0942900EB737F /* iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CE58D3528CE21E1003E2BB5 /* iOSPackage in Frameworks */,
+				230C86632963332E00A3D376 /* MultipeerClient in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +98,9 @@
 		5C99511E28B089550026C4BF /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				230C8654296332B300A3D376 /* MotionManager.swift */,
+				230C8656296332BB00A3D376 /* ContentView.swift */,
+				230C8658296332BE00A3D376 /* ViewModel.swift */,
 				5C5AE9E028B3DBA900912893 /* Info.plist */,
 				5C99511F28B089550026C4BF /* iOSApp.swift */,
 				5C99512328B089560026C4BF /* Assets.xcassets */,
@@ -143,7 +152,7 @@
 			);
 			name = iOS;
 			packageProductDependencies = (
-				5CE58D3428CE21E1003E2BB5 /* iOSPackage */,
+				230C86622963332E00A3D376 /* MultipeerClient */,
 			);
 			productName = iOS;
 			productReference = 5C99511C28B089550026C4BF /* iOS.app */;
@@ -220,6 +229,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C99512028B089550026C4BF /* iOSApp.swift in Sources */,
+				230C8655296332B300A3D376 /* MotionManager.swift in Sources */,
+				230C8659296332BE00A3D376 /* ViewModel.swift in Sources */,
+				230C8657296332BB00A3D376 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,9 +499,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		5CE58D3428CE21E1003E2BB5 /* iOSPackage */ = {
+		230C86622963332E00A3D376 /* MultipeerClient */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = iOSPackage;
+			productName = MultipeerClient;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

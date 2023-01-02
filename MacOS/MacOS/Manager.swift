@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import CoreMotion
 
 public class Manager {
 

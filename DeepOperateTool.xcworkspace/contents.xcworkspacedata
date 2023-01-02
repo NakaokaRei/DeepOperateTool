@@ -5,12 +5,6 @@
       location = "container:"
       name = "Packages">
       <FileRef
-         location = "group:Packages/iOSPackage">
-      </FileRef>
-      <FileRef
-         location = "group:Packages/MacPackage">
-      </FileRef>
-      <FileRef
          location = "group:Packages/DeepOperatePackage">
       </FileRef>
    </Group>

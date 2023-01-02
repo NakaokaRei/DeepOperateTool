@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import iOSView
 
 @main
 struct iOSApp: App {

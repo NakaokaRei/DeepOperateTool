@@ -2,21 +2,20 @@
 //  ContentView.swift
 //  
 //
-//  Created by NakaokaRei on 2022/08/20.
+//  Created by NakaokaRei on 2022/09/11.
 //
 
 import SwiftUI
-import iOSViewModel
 
 public struct ContentView: View {
 
     @ObservedObject var viewModel = ViewModel()
 
     public init() {}
-    
+
     public var body: some View {
         VStack {
-            Text("iOS")
+            Text("Mac")
                 .padding()
             Button(
                 action: {
@@ -29,7 +28,7 @@ public struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
