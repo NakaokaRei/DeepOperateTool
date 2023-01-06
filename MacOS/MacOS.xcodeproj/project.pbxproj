@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		230B776F296871150009864E /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230B776E296871150009864E /* VideoCapture.swift */; };
+		230B7772296878510009864E /* ImageHelpler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230B7771296878510009864E /* ImageHelpler.swift */; };
 		230C865B296332CE00A3D376 /* OperateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230C865A296332CE00A3D376 /* OperateManager.swift */; };
 		230C865D296332D300A3D376 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230C865C296332D300A3D376 /* ContentView.swift */; };
 		230C865F296332DA00A3D376 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230C865E296332DA00A3D376 /* ViewModel.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		230B776E296871150009864E /* VideoCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
+		230B7771296878510009864E /* ImageHelpler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelpler.swift; sourceTree = "<group>"; };
 		230C865A296332CE00A3D376 /* OperateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperateManager.swift; sourceTree = "<group>"; };
 		230C865C296332D300A3D376 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		230C865E296332DA00A3D376 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
@@ -42,6 +46,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		230B776B296870D40009864E /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				230C865A296332CE00A3D376 /* OperateManager.swift */,
+				230B776E296871150009864E /* VideoCapture.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		230B776C296870E20009864E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				230C865C296332D300A3D376 /* ContentView.swift */,
+				230C865E296332DA00A3D376 /* ViewModel.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		230B77702968782B0009864E /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				230B7771296878510009864E /* ImageHelpler.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		5C5C238128B08ABA00EB737F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -69,9 +99,9 @@
 		5C99513828B089720026C4BF /* MacOS */ = {
 			isa = PBXGroup;
 			children = (
-				230C865A296332CE00A3D376 /* OperateManager.swift */,
-				230C865C296332D300A3D376 /* ContentView.swift */,
-				230C865E296332DA00A3D376 /* ViewModel.swift */,
+				230B77702968782B0009864E /* Helper */,
+				230B776C296870E20009864E /* View */,
+				230B776B296870D40009864E /* Manager */,
 				5C5C238728B08B3E00EB737F /* AppDelegate.swift */,
 				5C99513928B089720026C4BF /* MacOSApp.swift */,
 				5C99513728B089720026C4BF /* Products */,
@@ -164,10 +194,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				230B7772296878510009864E /* ImageHelpler.swift in Sources */,
 				230C865F296332DA00A3D376 /* ViewModel.swift in Sources */,
 				5C5C238828B08B3E00EB737F /* AppDelegate.swift in Sources */,
 				230C865B296332CE00A3D376 /* OperateManager.swift in Sources */,
 				230C865D296332D300A3D376 /* ContentView.swift in Sources */,
+				230B776F296871150009864E /* VideoCapture.swift in Sources */,
 				5C99513A28B089720026C4BF /* MacOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +336,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MacOS/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "DeepOperateTool-macOS";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Use Camera";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "DeepOperateTool use Local Network to connect devices.";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -334,6 +367,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MacOS/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "DeepOperateTool-macOS";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Use Camera";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "DeepOperateTool use Local Network to connect devices.";
 				LD_RUNPATH_SEARCH_PATHS = (

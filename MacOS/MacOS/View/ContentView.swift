@@ -16,7 +16,11 @@ public struct ContentView: View {
     public var body: some View {
         VStack {
             Text("Mac")
+                .font(.title)
                 .padding()
+            if let nsImage = viewModel.buffImage {
+                Image(nsImage: nsImage)
+            }
             Button(
                 action: {
                     viewModel.send()
