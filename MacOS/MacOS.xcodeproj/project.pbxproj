@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		230B776F296871150009864E /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230B776E296871150009864E /* VideoCapture.swift */; };
 		230B7772296878510009864E /* ImageHelpler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230B7771296878510009864E /* ImageHelpler.swift */; };
+		230B77742968833A0009864E /* VideoCapture in Frameworks */ = {isa = PBXBuildFile; productRef = 230B77732968833A0009864E /* VideoCapture */; };
 		230C865B296332CE00A3D376 /* OperateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230C865A296332CE00A3D376 /* OperateManager.swift */; };
 		230C865D296332D300A3D376 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230C865C296332D300A3D376 /* ContentView.swift */; };
 		230C865F296332DA00A3D376 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230C865E296332DA00A3D376 /* ViewModel.swift */; };
@@ -20,7 +20,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		230B776E296871150009864E /* VideoCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
 		230B7771296878510009864E /* ImageHelpler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelpler.swift; sourceTree = "<group>"; };
 		230C865A296332CE00A3D376 /* OperateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperateManager.swift; sourceTree = "<group>"; };
 		230C865C296332D300A3D376 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,6 +39,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				230C86612963332800A3D376 /* MultipeerClient in Frameworks */,
+				230B77742968833A0009864E /* VideoCapture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,7 +50,6 @@
 			isa = PBXGroup;
 			children = (
 				230C865A296332CE00A3D376 /* OperateManager.swift */,
-				230B776E296871150009864E /* VideoCapture.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -139,6 +138,7 @@
 			name = "DeepOperateTool-macOS";
 			packageProductDependencies = (
 				230C86602963332800A3D376 /* MultipeerClient */,
+				230B77732968833A0009864E /* VideoCapture */,
 			);
 			productName = MacOS;
 			productReference = 5C99513628B089720026C4BF /* DeepOperateTool-macOS.app */;
@@ -199,7 +199,6 @@
 				5C5C238828B08B3E00EB737F /* AppDelegate.swift in Sources */,
 				230C865B296332CE00A3D376 /* OperateManager.swift in Sources */,
 				230C865D296332D300A3D376 /* ContentView.swift in Sources */,
-				230B776F296871150009864E /* VideoCapture.swift in Sources */,
 				5C99513A28B089720026C4BF /* MacOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,6 +405,10 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		230B77732968833A0009864E /* VideoCapture */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = VideoCapture;
+		};
 		230C86602963332800A3D376 /* MultipeerClient */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = MultipeerClient;

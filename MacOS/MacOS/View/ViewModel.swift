@@ -9,8 +9,8 @@ import Foundation
 import SwiftUI
 import Combine
 import Cocoa
-import AVFoundation
 import MultipeerClient
+import VideoCapture
 
 public class ViewModel: ObservableObject {
 

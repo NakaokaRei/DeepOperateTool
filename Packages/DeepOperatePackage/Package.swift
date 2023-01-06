@@ -12,11 +12,16 @@ let package = Package(
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(name: "MultipeerClient", targets: ["MultipeerClient"]),
+        .library(name: "VideoCapture", targets: ["VideoCapture"])
     ],
     dependencies: [],
     targets: [
         .target(
             name: "MultipeerClient",
+            dependencies: []
+        ),
+        .target(
+            name: "VideoCapture",
             dependencies: []
         ),
     ]

@@ -4,17 +4,14 @@
 //
 //  Created by rei.nakaoka on 2023/01/07.
 //
-
-import Foundation
-
 import Foundation
 import AVFoundation
 
-class VideoCapture: NSObject {
+public class VideoCapture: NSObject {
     let captureSession = AVCaptureSession()
     var handler: ((CMSampleBuffer) -> Void)?
 
-    override init() {
+    public override init() {
         super.init()
         setup()
     }
@@ -44,14 +41,14 @@ class VideoCapture: NSObject {
         captureSession.commitConfiguration()
     }
 
-    func run(_ handler: @escaping (CMSampleBuffer) -> Void)  {
+    public func run(_ handler: @escaping (CMSampleBuffer) -> Void)  {
         if !captureSession.isRunning {
             self.handler = handler
             captureSession.startRunning()
         }
     }
 
-    func stop() {
+    public func stop() {
         if captureSession.isRunning {
             captureSession.stopRunning()
         }
@@ -59,7 +56,7 @@ class VideoCapture: NSObject {
 }
 
 extension VideoCapture: AVCaptureVideoDataOutputSampleBufferDelegate {
-    func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
+    public func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
         if let handler = handler {
             handler(sampleBuffer)
         }
