@@ -23,10 +23,10 @@ public struct ContentView: View {
             }
             Button(
                 action: {
-                    viewModel.send()
+                    viewModel.startCapture()
                 }
             ) {
-                Text("send")
+                Text("start")
             }
         }
     }

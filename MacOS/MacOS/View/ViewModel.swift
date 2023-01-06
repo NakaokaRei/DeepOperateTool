@@ -16,17 +16,7 @@ public class ViewModel: ObservableObject {
 
     @Published var buffImage: NSImage?
 
-    private let multipeerClient = MultipeerClient()
     private let videoCapture = VideoCapture()
-
-    public init() {
-        multipeerClient.delegate = self
-    }
-
-    public func send() {
-        multipeerClient.send(message: "Mac")
-        startCapture()
-    }
 
     public func startCapture() {
         videoCapture.run { sampleBuffer in
