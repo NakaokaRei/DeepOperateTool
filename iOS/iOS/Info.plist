@@ -7,7 +7,5 @@
 		<string>_DeepOperateTool._tcp</string>
 		<string>_DeepOperateTool._udp</string>
 	</array>
-	<key>NSLocalNetworkUsageDescription</key>
-	<string>DeepOperateTool use Local Network to connect devices.</string>
 </dict>
 </plist>

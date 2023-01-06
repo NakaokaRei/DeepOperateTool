@@ -21,12 +21,11 @@ public class ViewModel: ObservableObject {
 
     public func send() {
         multipeerClient.send(message: "Mac")
-        OperateManager.moveMouse(dx: 10, dy: 10)
     }
 }
 
 extension ViewModel: MulitipeerProtocol {
     public func recievedMessage(message: String) {
-        print("received")
+        OperateManager.moveMouse(dx: 10, dy: 10)
     }
 }
