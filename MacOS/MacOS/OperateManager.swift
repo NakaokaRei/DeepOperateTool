@@ -1,5 +1,5 @@
 //
-//  KeyBoardManager.swift
+//  OperateManager.swift
 //
 //
 //  Created by NakaokaRei on 2022/08/20.
