@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		230C865B296332CE00A3D376 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230C865A296332CE00A3D376 /* Manager.swift */; };
+		230C865B296332CE00A3D376 /* OperateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230C865A296332CE00A3D376 /* OperateManager.swift */; };
 		230C865D296332D300A3D376 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230C865C296332D300A3D376 /* ContentView.swift */; };
 		230C865F296332DA00A3D376 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230C865E296332DA00A3D376 /* ViewModel.swift */; };
 		230C86612963332800A3D376 /* MultipeerClient in Frameworks */ = {isa = PBXBuildFile; productRef = 230C86602963332800A3D376 /* MultipeerClient */; };
@@ -18,12 +18,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		230C865A296332CE00A3D376 /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		230C865A296332CE00A3D376 /* OperateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperateManager.swift; sourceTree = "<group>"; };
 		230C865C296332D300A3D376 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		230C865E296332DA00A3D376 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
-		5C5AE9DE28B3D8AD00912893 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5C5AE9DE28B3D8AD00912893 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C5C238728B08B3E00EB737F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5C99513628B089720026C4BF /* MacOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C99513628B089720026C4BF /* DeepOperateTool-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DeepOperateTool-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C99513928B089720026C4BF /* MacOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacOSApp.swift; sourceTree = "<group>"; };
 		5C99513D28B089730026C4BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C99514028B089730026C4BF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -60,7 +60,7 @@
 		5C99513728B089720026C4BF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5C99513628B089720026C4BF /* MacOS.app */,
+				5C99513628B089720026C4BF /* DeepOperateTool-macOS.app */,
 			);
 			name = Products;
 			path = ..;
@@ -69,14 +69,14 @@
 		5C99513828B089720026C4BF /* MacOS */ = {
 			isa = PBXGroup;
 			children = (
-				230C865A296332CE00A3D376 /* Manager.swift */,
+				230C865A296332CE00A3D376 /* OperateManager.swift */,
 				230C865C296332D300A3D376 /* ContentView.swift */,
 				230C865E296332DA00A3D376 /* ViewModel.swift */,
-				5C5AE9DE28B3D8AD00912893 /* Info.plist */,
 				5C5C238728B08B3E00EB737F /* AppDelegate.swift */,
 				5C99513928B089720026C4BF /* MacOSApp.swift */,
 				5C99513728B089720026C4BF /* Products */,
 				5C99513D28B089730026C4BF /* Assets.xcassets */,
+				5C5AE9DE28B3D8AD00912893 /* Info.plist */,
 				5C99514228B089730026C4BF /* MacOS.entitlements */,
 				5C99513F28B089730026C4BF /* Preview Content */,
 			);
@@ -94,9 +94,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5C99513528B089720026C4BF /* MacOS */ = {
+		5C99513528B089720026C4BF /* DeepOperateTool-macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5C99514528B089730026C4BF /* Build configuration list for PBXNativeTarget "MacOS" */;
+			buildConfigurationList = 5C99514528B089730026C4BF /* Build configuration list for PBXNativeTarget "DeepOperateTool-macOS" */;
 			buildPhases = (
 				5C99513228B089720026C4BF /* Sources */,
 				5C99513328B089720026C4BF /* Frameworks */,
@@ -106,12 +106,12 @@
 			);
 			dependencies = (
 			);
-			name = MacOS;
+			name = "DeepOperateTool-macOS";
 			packageProductDependencies = (
 				230C86602963332800A3D376 /* MultipeerClient */,
 			);
 			productName = MacOS;
-			productReference = 5C99513628B089720026C4BF /* MacOS.app */;
+			productReference = 5C99513628B089720026C4BF /* DeepOperateTool-macOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -142,7 +142,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5C99513528B089720026C4BF /* MacOS */,
+				5C99513528B089720026C4BF /* DeepOperateTool-macOS */,
 			);
 		};
 /* End PBXProject section */
@@ -166,7 +166,7 @@
 			files = (
 				230C865F296332DA00A3D376 /* ViewModel.swift in Sources */,
 				5C5C238828B08B3E00EB737F /* AppDelegate.swift in Sources */,
-				230C865B296332CE00A3D376 /* Manager.swift in Sources */,
+				230C865B296332CE00A3D376 /* OperateManager.swift in Sources */,
 				230C865D296332D300A3D376 /* ContentView.swift in Sources */,
 				5C99513A28B089720026C4BF /* MacOSApp.swift in Sources */,
 			);
@@ -303,6 +303,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MacOS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "DeepOperateTool-macOS";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "DeepOperateTool use Local Network to connect devices.";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -332,6 +333,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MacOS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "DeepOperateTool-macOS";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "DeepOperateTool use Local Network to connect devices.";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,7 +360,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5C99514528B089730026C4BF /* Build configuration list for PBXNativeTarget "MacOS" */ = {
+		5C99514528B089730026C4BF /* Build configuration list for PBXNativeTarget "DeepOperateTool-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5C99514628B089730026C4BF /* Debug */,

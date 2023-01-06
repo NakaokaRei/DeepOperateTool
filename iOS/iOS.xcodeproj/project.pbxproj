@@ -35,7 +35,7 @@
 		5C5AE9E028B3DBA900912893 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5C5C238D28B0942900EB737F /* iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C5C238F28B0942900EB737F /* iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSTests.swift; sourceTree = "<group>"; };
-		5C99511C28B089550026C4BF /* iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C99511C28B089550026C4BF /* DeepOperateTool-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DeepOperateTool-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C99511F28B089550026C4BF /* iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSApp.swift; sourceTree = "<group>"; };
 		5C99512328B089560026C4BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C99512628B089560026C4BF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -89,7 +89,7 @@
 		5C99511D28B089550026C4BF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5C99511C28B089550026C4BF /* iOS.app */,
+				5C99511C28B089550026C4BF /* DeepOperateTool-iOS.app */,
 				5C5C238D28B0942900EB737F /* iOSTests.xctest */,
 			);
 			name = Products;
@@ -138,9 +138,9 @@
 			productReference = 5C5C238D28B0942900EB737F /* iOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		5C99511B28B089550026C4BF /* iOS */ = {
+		5C99511B28B089550026C4BF /* DeepOperateTool-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5C99512A28B089560026C4BF /* Build configuration list for PBXNativeTarget "iOS" */;
+			buildConfigurationList = 5C99512A28B089560026C4BF /* Build configuration list for PBXNativeTarget "DeepOperateTool-iOS" */;
 			buildPhases = (
 				5C99511828B089550026C4BF /* Sources */,
 				5C99511928B089550026C4BF /* Frameworks */,
@@ -150,12 +150,12 @@
 			);
 			dependencies = (
 			);
-			name = iOS;
+			name = "DeepOperateTool-iOS";
 			packageProductDependencies = (
 				230C86622963332E00A3D376 /* MultipeerClient */,
 			);
 			productName = iOS;
-			productReference = 5C99511C28B089550026C4BF /* iOS.app */;
+			productReference = 5C99511C28B089550026C4BF /* DeepOperateTool-iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -190,7 +190,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5C99511B28B089550026C4BF /* iOS */,
+				5C99511B28B089550026C4BF /* DeepOperateTool-iOS */,
 				5C5C238C28B0942900EB737F /* iOSTests */,
 			);
 		};
@@ -240,7 +240,7 @@
 /* Begin PBXTargetDependency section */
 		5C5C239228B0942900EB737F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5C99511B28B089550026C4BF /* iOS */;
+			target = 5C99511B28B089550026C4BF /* DeepOperateTool-iOS */;
 			targetProxy = 5C5C239128B0942900EB737F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -416,6 +416,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "DeepOperateTool-iOS";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "DeepOperateTool use Local Network to connect devices.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -447,6 +448,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "DeepOperateTool-iOS";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "DeepOperateTool use Local Network to connect devices.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -487,7 +489,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5C99512A28B089560026C4BF /* Build configuration list for PBXNativeTarget "iOS" */ = {
+		5C99512A28B089560026C4BF /* Build configuration list for PBXNativeTarget "DeepOperateTool-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5C99512B28B089560026C4BF /* Debug */,
