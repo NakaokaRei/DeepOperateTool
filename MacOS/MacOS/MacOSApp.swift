@@ -17,5 +17,8 @@ struct MacOSApp: App {
         WindowGroup {
             ContentView()
         }
+        Settings {
+            SettingsView()
+        }
     }
 }
