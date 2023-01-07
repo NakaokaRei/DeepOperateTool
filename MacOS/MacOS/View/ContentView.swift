@@ -15,20 +15,13 @@ public struct ContentView: View {
 
     public var body: some View {
         VStack {
-            Text("Mac")
-                .font(.title)
-                .padding()
             if let nsImage = viewModel.buffImage {
                 Image(nsImage: nsImage)
                     .resizable()
                     .scaledToFit()
                     .frame(width: 500, height: 500)
             }
-            Button(
-                action: {
-                    viewModel.startCapture()
-                }
-            ) {
+            Button(action: viewModel.startCapture) {
                 Text("start")
             }
         }
