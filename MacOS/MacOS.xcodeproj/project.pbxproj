@@ -14,6 +14,7 @@
 		230C865F296332DA00A3D376 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230C865E296332DA00A3D376 /* ViewModel.swift */; };
 		230C86612963332800A3D376 /* MultipeerClient in Frameworks */ = {isa = PBXBuildFile; productRef = 230C86602963332800A3D376 /* MultipeerClient */; };
 		235D5DAF296925D800B30BFD /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235D5DAE296925D800B30BFD /* SettingsView.swift */; };
+		23B429A429696B6B007ACF03 /* HandPoseManager in Frameworks */ = {isa = PBXBuildFile; productRef = 23B429A329696B6B007ACF03 /* HandPoseManager */; };
 		5C5C238828B08B3E00EB737F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5C238728B08B3E00EB737F /* AppDelegate.swift */; };
 		5C99513A28B089720026C4BF /* MacOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C99513928B089720026C4BF /* MacOSApp.swift */; };
 		5C99513E28B089730026C4BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C99513D28B089730026C4BF /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 			files = (
 				230C86612963332800A3D376 /* MultipeerClient in Frameworks */,
 				230B77742968833A0009864E /* VideoCapture in Frameworks */,
+				23B429A429696B6B007ACF03 /* HandPoseManager in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +144,7 @@
 			packageProductDependencies = (
 				230C86602963332800A3D376 /* MultipeerClient */,
 				230B77732968833A0009864E /* VideoCapture */,
+				23B429A329696B6B007ACF03 /* HandPoseManager */,
 			);
 			productName = MacOS;
 			productReference = 5C99513628B089720026C4BF /* DeepOperateTool-macOS.app */;
@@ -416,6 +419,10 @@
 		230C86602963332800A3D376 /* MultipeerClient */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = MultipeerClient;
+		};
+		23B429A329696B6B007ACF03 /* HandPoseManager */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HandPoseManager;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
