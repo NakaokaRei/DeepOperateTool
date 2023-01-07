@@ -15,6 +15,7 @@
 		230C86612963332800A3D376 /* MultipeerClient in Frameworks */ = {isa = PBXBuildFile; productRef = 230C86602963332800A3D376 /* MultipeerClient */; };
 		235D5DAF296925D800B30BFD /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235D5DAE296925D800B30BFD /* SettingsView.swift */; };
 		23B429A429696B6B007ACF03 /* HandPoseManager in Frameworks */ = {isa = PBXBuildFile; productRef = 23B429A329696B6B007ACF03 /* HandPoseManager */; };
+		23B429A8296978B3007ACF03 /* FingerPointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B429A7296978B3007ACF03 /* FingerPointView.swift */; };
 		5C5C238828B08B3E00EB737F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5C238728B08B3E00EB737F /* AppDelegate.swift */; };
 		5C99513A28B089720026C4BF /* MacOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C99513928B089720026C4BF /* MacOSApp.swift */; };
 		5C99513E28B089730026C4BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C99513D28B089730026C4BF /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 		230C865C296332D300A3D376 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		230C865E296332DA00A3D376 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		235D5DAE296925D800B30BFD /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		23B429A7296978B3007ACF03 /* FingerPointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingerPointView.swift; sourceTree = "<group>"; };
 		5C5AE9DE28B3D8AD00912893 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C5C238728B08B3E00EB737F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C99513628B089720026C4BF /* DeepOperateTool-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DeepOperateTool-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +66,7 @@
 				230C865C296332D300A3D376 /* ContentView.swift */,
 				230C865E296332DA00A3D376 /* ViewModel.swift */,
 				235D5DAE296925D800B30BFD /* SettingsView.swift */,
+				23B429A7296978B3007ACF03 /* FingerPointView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23B429A8296978B3007ACF03 /* FingerPointView.swift in Sources */,
 				235D5DAF296925D800B30BFD /* SettingsView.swift in Sources */,
 				230B7772296878510009864E /* ImageHelpler.swift in Sources */,
 				230C865F296332DA00A3D376 /* ViewModel.swift in Sources */,

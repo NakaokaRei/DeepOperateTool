@@ -19,7 +19,7 @@ public class HandPoseManager {
         handPoseResquest.maximumHandCount = 1
     }
 
-    func recognize(_ sampleBuffer: CMSampleBuffer) async throws -> (thumbTip: CGPoint?, indexTip: CGPoint?) {
+    public func recognize(_ sampleBuffer: CMSampleBuffer) async throws -> (thumbTip: CGPoint?, indexTip: CGPoint?) {
         var thumbTip: CGPoint?
         var indexTip: CGPoint?
 
@@ -30,7 +30,7 @@ public class HandPoseManager {
             return (thumbTip, indexTip)
         }
 
-        let thumbPoints = try observation.recognizedPoints(.indexFinger)
+        let thumbPoints = try observation.recognizedPoints(.thumb)
         let indexFingerPoints = try observation.recognizedPoints(.indexFinger)
 
         guard let thumbTipPoint = thumbPoints[.thumbTip], let indexTipPoint = indexFingerPoints[.indexTip] else {
@@ -41,8 +41,8 @@ public class HandPoseManager {
             return (thumbTip, indexTip)
         }
 
-        thumbTip = CGPoint(x: thumbTipPoint.location.x, y: 1 - thumbTipPoint.location.y)
-        indexTip = CGPoint(x: indexTipPoint.location.x, y: 1 - indexTipPoint.location.y)
+        thumbTip = CGPoint(x: thumbTipPoint.location.x * 500, y: (1 - thumbTipPoint.location.y) * 500)
+        indexTip = CGPoint(x: indexTipPoint.location.x * 500, y: (1 - indexTipPoint.location.y) * 500)
 
         return (thumbTip, indexTip)
     }
