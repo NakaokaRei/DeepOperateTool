@@ -20,6 +20,9 @@ public struct ContentView: View {
                 .padding()
             if let nsImage = viewModel.buffImage {
                 Image(nsImage: nsImage)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 500, height: 500)
             }
             Button(
                 action: {
