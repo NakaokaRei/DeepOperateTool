@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import AVFoundation
 import Vision
 
 public class HandPoseManager {
