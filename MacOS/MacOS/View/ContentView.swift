@@ -27,7 +27,7 @@ public struct ContentView: View {
                     }
                 }
             }
-            Button(action: { viewModel.startCapture() }) {
+            Button(action: { viewModel.post() }) {
                 Text("start")
             }
         }

@@ -33,6 +33,13 @@ public class ViewModel: ObservableObject {
             }
         }
     }
+
+    func post() {
+        OperateManager.keyDown(Keycode.control)
+        OperateManager.keyDown(Keycode.leftArrow)
+        OperateManager.keyUp(Keycode.leftArrow)
+        OperateManager.keyUp(Keycode.control)
+    }
 }
 
 extension ViewModel: MulitipeerProtocol {
